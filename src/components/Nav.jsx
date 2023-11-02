@@ -8,6 +8,7 @@ function Nav() {
       <Link to='/age'>Age</Link>
       <Link to='/Login'>Login</Link>
       <Link to='/CustomHook'>Custom Hook playground</Link>
+      <Link to='/Counter'>counter page</Link>
     </nav>
   );
 }

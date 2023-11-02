@@ -6,6 +6,7 @@ import AgePage from "./pages/AgePage";
 import LoginForm from "./pages/LoginForm";
 import Placeholder from "./pages/Placeholder";
 import CustomHookPage from "./pages/CustomHookPage";
+import Mycounter from "./pages/Mycounter";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           <Route path='/age' element={<AgePage />} />
           <Route path='/Login' element={<LoginForm />} />
           <Route path='/CustomHook' element={<CustomHookPage />} />
+          <Route path='/Counter' element={<Mycounter />} />
           <Route path='*' element={<Placeholder />} />
         </Routes>
       </Router>
