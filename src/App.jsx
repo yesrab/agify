@@ -2,10 +2,9 @@ import "./App.css";
 import Nav from "./components/Nav";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import AgePage from "./pages/AgePage";
 import LoginForm from "./pages/LoginForm";
-import Placeholder from "./pages/placeholder";
+import Placeholder from "./pages/Placeholder";
 import CustomHookPage from "./pages/CustomHookPage";
 
 function App() {
