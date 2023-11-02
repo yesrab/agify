@@ -5,7 +5,10 @@ function Mycounter() {
   const addTimer = () => {
     settimerlist((timerlist) => [
       ...timerlist,
-      { id: timerlist.length + 1, counter: <Counter id={timerlist.length + 1} key={timerlist.length + 1} /> },
+      {
+        id: timerlist.length + 1,
+        counter: <Counter id={timerlist.length + 1} key={timerlist.length + 1} />,
+      },
     ]);
   };
   return (

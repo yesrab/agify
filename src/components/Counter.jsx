@@ -1,15 +1,15 @@
 import React, { useState } from "react";
 import "../styles/counter.css";
-let myTimerIntervel = null;
 function Counter(props) {
   const [count, setCount] = useState(0);
+  const [timerid, setTimerid] = useState(null);
   const toggleTimer = (bool) => {
-    if (bool === true && !myTimerIntervel) {
-      myTimerIntervel = setInterval(increment, 1000);
+    if (bool === true && !timerid) {
+      setTimerid(setInterval(increment, 1000));
     }
-    if (bool === false && myTimerIntervel) {
-      clearInterval(myTimerIntervel);
-      myTimerIntervel = null;
+    if (bool === false && timerid) {
+      clearInterval(timerid);
+      setTimerid(null);
     }
   };
   const increment = () => {
@@ -34,9 +34,10 @@ function Counter(props) {
       </button>
       <button
         onClick={() => {
+          toggleTimer(false);
           setCount(0);
         }}>
-        DELETE
+        RESET
       </button>
     </div>
   );
