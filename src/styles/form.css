@@ -1,0 +1,22 @@
+input {
+  width: 30vw;
+  aspect-ratio: 9/1;
+  display: flex;
+  gap: 1em;
+  text-align: left;
+  align-self: center;
+}
+input::placeholder {
+  text-align: center;
+}
+form {
+  margin: 2em;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.errorMessage {
+  color: red;
+  font-size: 0.7em;
+  text-align: center;
+}

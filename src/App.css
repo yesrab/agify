@@ -1,0 +1,21 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+nav {
+  display: flex;
+  gap: 2em;
+  margin: 2em;
+}
+a {
+  border-radius: 1em;
+  width: 10vw;
+  border: 2px solid black;
+}
+button {
+  width: 10vw;
+  aspect-ratio: 2/1;
+  align-self: center;
+}
