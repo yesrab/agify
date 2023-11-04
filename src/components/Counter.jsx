@@ -15,6 +15,7 @@ function Counter(props) {
   const increment = () => {
     setCount((count) => count + 1);
   };
+  
   return (
     <div className='counterElement'>
       <h1>{count}</h1>

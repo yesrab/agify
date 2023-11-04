@@ -11,6 +11,7 @@ function Mycounter() {
       },
     ]);
   };
+ 
   return (
     <>
       <button onClick={addTimer}>Add timer</button>
